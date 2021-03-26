@@ -24,7 +24,6 @@ export const getAllUsers = async (dispatch) => {
 	const usersFromStorage = localStorage.getItem('users')
 		? JSON.parse(localStorage.getItem('users'))
 		: users
-
 	try {
 		dispatch({ type: USERS_GET_REQUEST })
 
@@ -51,7 +50,6 @@ export const createSingleUser = async ({ name, email, role }, dispatch) => {
 	const usersFromStorage = localStorage.getItem('users')
 		? JSON.parse(localStorage.getItem('users'))
 		: users
-
 	try {
 		dispatch({ type: USER_POST_REQUEST })
 
@@ -79,7 +77,6 @@ export const deleteSingleUser = async (id, dispatch) => {
 	const usersFromStorage = localStorage.getItem('users')
 		? JSON.parse(localStorage.getItem('users'))
 		: users
-
 	try {
 		dispatch({ type: USER_DELETE_REQUEST })
 
@@ -120,8 +117,11 @@ export const resetUsersList = (dispatch) => {
 
 // 		await axios.post('/api/users', { name, email, role }, config)
 
+// 		dispatch({ type: USER_POST_SUCCESS })
+
 // 	} catch (err) {
 // 		// const { data: { message } } = err.response
+
 // 		dispatch({
 // 			type: USER_POST_FAIL,
 // 			payload: message,

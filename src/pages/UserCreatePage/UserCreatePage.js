@@ -53,7 +53,7 @@ const UserCreatePage = () => {
 		if (usersState.response !== undefined && usersState.response.success) {
 			setName('')
 			setEmail('')
-			setRole('administrator')
+			setRole('Administrator')
 		}
 	}, [usersState])
 

@@ -5,7 +5,7 @@ const useStyles = makeStyles({
 	main__container: {
 		display: 'flex',
 		flexDirection: 'column',
-		minHeight: '100vh',
+		minHeight: '125vh',
 		backgroundColor: blueGrey[100],
 		padding: '0',
 	},

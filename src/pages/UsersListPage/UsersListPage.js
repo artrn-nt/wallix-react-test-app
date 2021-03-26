@@ -79,7 +79,14 @@ const UsersListPage = () => {
 								{usersState.users.map(
 									({ _id, name, email, role }, index, arr) => (
 										<Container key={_id}>
-											<ListItem className={classes.users__list__item}>
+											<ListItem
+												className={classes.users__list__item}
+												component={motion.li}
+												whileHover={{
+													scale: 1.025,
+													transition: { duration: 0.15, ease: 'easeIn' },
+												}}
+											>
 												<ListItemAvatar>
 													<Avatar
 														alt={name}

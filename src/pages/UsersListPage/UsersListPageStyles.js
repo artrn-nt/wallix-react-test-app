@@ -21,10 +21,12 @@ const useStyles = makeStyles({
 	},
 	users__list: {
 		width: '100%',
-		maxHeight: 625,
+		maxHeight: 500,
 		backgroundColor: `${blueGrey[200]}`,
 		borderRadius: 8,
 		overflowY: 'scroll',
+		padding: 0,
+		overflowX: 'hidden',
 	},
 	user__info: {
 		'& p span': {

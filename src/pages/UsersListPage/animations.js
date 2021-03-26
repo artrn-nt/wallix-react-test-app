@@ -1,3 +1,5 @@
+import { blueGrey } from '@material-ui/core/colors'
+
 export const usersListPageVariants = {
 	exit: {
 		opacity: 0,
